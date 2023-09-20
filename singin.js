@@ -1,21 +1,23 @@
-function signin(){
+
+function signin() {
     let username = document.getElementById('text').value;
-    let password = document.getElementById('number').value; 
-    //let ajit =[username ,password] 
-    //console.log(ajit)
-let username1 = sessionStorage.getItem('name');
-let password1 = sessionStorage.getItem('password');
-console.log(username1);
-console.log(password1);
+    let password = document.getElementById('number').value;
+    console.log("username = " + username + ",password = " + password);
 
+    let storedData = JSON.parse(sessionStorage.getItem("data"));
+    console.log(storedData);
 
-if (username1 == username)
-{
-    console.log("true");
-}
-else{
-    console.log("invliad");
-}
+    let checklogin = storedData.filter(function (e) {
+        return e.username == username && e.password == password;
+    });
+
+    console.log(checklogin);
+
+    if (checklogin.length >= 1) {
+        alert("valid information");
+    } else {
+        alert("Please enter valid information");
+    }
 }
 
 

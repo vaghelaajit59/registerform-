@@ -2,83 +2,60 @@
 <html>
 
 <head>
-    <Title>Title</Title>
-
-
+    <Title>Sign Up</Title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <link rel="stylesheet" href="">
 <link rel="stylesheet" href="style.css">
-<script src="signup.js" ></script> 
 
 
+<style>
+    .fs-1{
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+    }
+    body{
+      
+      color: aliceblue;
+      display: flex;
+      
+    }
+
+    
+</style>
 <body>
-    <div class="header">
-        <div class="img">
-            <img src="https://img.freepik.com/free-vector/gradient-quill-pen-design-template_23-2149837194.jpg"
-                height="100px" width="100px">
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+     <img src="data:image/jpeg;base64,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" height="80px"width="100px">
+       
+          <i class="fas fa-bars"></i>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Register.html">Register</a>
+            </li>
+            
+          </ul>
+     
         </div>
-
-        <div class="end">
-
-            <a href="./index.html"">Home</a><br>
-                
-                            <a href=" ./signin.html">Sign in</a><br>
-            <a href="./Register.html" id="Register">Register </a><br>
-
-
-        </div>
-    </div> <br>
-    <div class="mix">
-        <div class="welcome">
-            <h2>Welcome Guest</h2>
-        </div><br>
-        <div class="form">
-           
-        </div>
-    </div>
+      </div>
+    </nav>
 
 
 
-    <div class="footer">
-        <div class="port">
-            <img src="http://techamdavad.com/assets/img/techamdavad-logo.png" height="80px" width="80px">
-            <p>3rd Floor, 305 Ratnanabh Complex,<br>
-                Upstair Garg Library,opp. <br>
-                Gujarat Vidhyapith Ashram road,<br>
-                Ahmedabad-380014<br>
-            </p>
-        </div>
-        <div class="use">
-            <h3>Useful</h3>
 
-            <a href="#">Home</a><br>
-            <a href="#">About</a><br>
-            <a href="#">Courses</a><br>
-            <a href="#">Servies</a><br>
-            <a href="#">Privacy policy</a><br>
-            <a href="#">Terms os servies</a>
-
-
-        </div>
-        <div class="servies">
-            <h3>Our Servies</h3>
-
-            <a href="#">Web disigning</a><br>
-            <a href="#">Digital marketing</a><br>
-            <a href="#">Web devopment</a><br>
-            <a href="#">Application devlopment</a><br>
-            <a href="#">Tecnology consulting</a><br>
-            <a href="#">Product Management</a>
-
-
-        </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19912.655312247458!2d72.5744627206273!3d23.04879943551652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8461b18f8dcb%3A0xe03667ad5df13776!2sRatnanabh%20Complex%2C%20Ashram%20Rd%2C%20Sattar%20Taluka%20Society%2C%20Usmanpura%2C%20Ahmedabad%2C%20Gujarat%20380014!5e0!3m2!1sen!2sin!4v1683276910581!5m2!1sen!2sin"
-                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
+    
 
 </body>
 
